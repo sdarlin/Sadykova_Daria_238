@@ -6,7 +6,7 @@ copy_with_unique_name() {
 	local name=$(basename "$src")
 	local base="${name%.*}"
 	local extension="${name##*.}"
-    local k=1
+	local k=1
 
 	while [ -e "$dst/$base($k).$extension" ]
 	do
